@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="en-tete">
+        <div class="tete-sidebar">
+            <!-- Icone menu -->
+            <i class=""></i>
+            <!-- Image pour les contacts -->
+            <img src="asset/contacts.png" alt="" />
+            <h1 class="titre-entete">Contacts</h1>
+        </div>       
+        <div class="bloc-recherche">
+            <!-- Icone de recherche -->
+            <i></i>
+            <!-- Champ de saisit -->
+            <input type="search" name="recherche" id="recherche" >
+        </div>        
+      </div>
+    </header>
+    <div class="block-main">
+      <aside>
+        <div class="sidebar">
+          <div class="corp-sidebar">
+            <!-- Bouton créer un contact -->
+            <div>
+              <button type="button" id="btnnew-contact" class="boutons">Créer un contact</button>
+            </div>
+            <!-- Bouton contact -->
+            <div>
+              <button type="button" id="btn-contact" class="boutons">Contact <span>10</span></button>
+            </div>
+            <div><i></i> Fréquents</div>
+            <div class="block-libelle">
+              <div class="entete-libelle">
+              <h5>Libellé</h5><i>+</i>
+              </div>
+              <ul class="liste-categorie">
+                <li>Bureau</li>
+                <li>Bureau</li>
+                <li>Amis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <div class="blockprincipale">
+          <div id="bloc-formulaire">
+            <div class="entete-form">
+              <i class="fa-solid fa-left-long"></i>
+              <i class="fa-regular fa-star" id="mark"></i>
+              <button type="submit" id="btn-formcontact"> Enregistrer </button>
+            </div>
+            <div class="bloc-addphoto">
+              <img src="asset/photo_silhouette.png" alt="Ajouter une photo" class="photo-silhouette">
+              <i class="fa-solid fa-circle-plus" id="ajout"></i>
+            </div>
+            <div>
+              
+            </div>
+            <div class="bloc-champs">
+              <form action="">
+                <fieldset>
+                  <div><input type="text" name="" id="prenom" placeholder="Prenom"></div>
+                  <div><input type="text" name="" id="nom" placeholder="Nom"></div>
+                  <div id ="champs-masque1">
+                    <div><input type="text" id="suffixe" placeholder="Suffixe"></div>
+                    <div><input type="text" id="prenom-phonetique" placeholder="Prenom phonetique"></div>
+                    <div><input type="text" id="prenom-phonetique2" placeholder="2e prénom phonetique"></div>
+                    <div><input type="text" id="nom-phonetique" placeholder="Nom phonetique"></div>
+                    <div><input type="text" id="pseudo" placeholder="Pseudo"></div>
+                    <div><input type="text" id="type" placeholder="Classer en tant que"></div>
+                  </div>                
+                </fieldset>
+                <fieldset>
+                  <div><input type="text" id="entreprise" placeholder="Entreprise"></div>
+                  <div><input type="text" id="fonction" placeholder="Fonction"></div>
+                  <div><input type="text" id="service" placeholder="Service"></div>
+                </fieldset>
+                <fieldset>
+                  <div><input type="email" id="email" placeholder="E-mail"></div>
+                </fieldset>
+                <a href=""><i class="fa-solid fa-plus"></i> Ajouter une adresse e-mail</a>
+                <fieldset>
+                  <div>
+                    <input type="tel"  id="numero" placeholder="Téléphone">
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>            
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

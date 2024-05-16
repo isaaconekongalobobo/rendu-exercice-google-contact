@@ -1,0 +1,373 @@
+* {
+    margin: 0%;
+    padding: 5px;
+    font-family: sans-serif;
+}
+body {
+    background-color: #f6f8fc;
+    margin-top: -25px;
+}
+.block-main {
+    display: flex;
+}
+p {
+    font-weight: normal;
+    font-size: medium;
+}
+fieldset {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+.tete-sidebar {
+    display: flex;
+    gap: 10px;
+}
+/* Titre sur l`en tete */
+.tete-sidebar h1 {
+    font-size: 28px;
+    font-weight: lighter;
+}
+.en-tete {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+#recherche {
+    width: 440px;
+    height: 40px;
+    background-color: #eef0f2;
+    border: none;
+    border-radius: 9px;
+    position: relative;
+    left: 30px;
+}
+#recherche:hover {
+    border: 2px solid #6487e1;
+}
+.blockprincipale {
+    padding: 5px;
+    position: relative;
+    background-color: #ffffff;
+    height: 500px;
+    width: 1000px;
+    border-radius: 5px;
+    margin-left: 50px;
+    left: 20px;
+}
+/* Titre du block principale */
+.blockprincipale h3 {
+    font-weight: lighter;
+    font-size: 23px;
+    opacity: 90%;
+}
+/* Block pour l`affichage des contacts */
+/* Bloc ou sont disposé les categories d`informations sur le contact */
+.onglets-infos {
+    position: relative;
+    display: flex;
+    gap: 12%;
+}
+/* Paragraphes dans le bloct principale */
+.onglets-infos p {
+    font-size: small;
+    opacity: 90%;
+}
+
+#nombre-contact {
+    font-size: small;
+    font-weight: lighter;
+}
+/* Trait a police fine */
+.ligne-fin {
+    padding: 0%;
+    opacity: 5%;
+    font-weight: lighter;
+}
+/* Trait a police fort */
+.ligne-fort {
+    position: relative;
+    padding: 0%;
+    opacity: 80%;
+    width: 600px;
+    text-align: center;
+    left: 180px;
+}
+/* style pour les boutons dans le side bar */
+.boutons {
+    border: none;
+    border-radius: 8px;
+    background-color: #6487e1;
+    color: #ffffff;
+    padding: 10px;
+}
+/* En tete pour la section libellé */
+.entete-libelle {
+    display: flex;
+}
+/* Icone + pour le libellé */
+.entete-libelle i {
+    font-style: normal;
+    font-weight: bold;
+    position: relative;
+    right: -40px;
+    top: -2px;
+}
+/* Liste pour les categories de contact */
+.liste-categorie {
+    list-style: none;
+}
+/* Image pour l`en tete */
+.img-entete {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+}
+/* Titre de l`en tete */
+.titre-entete {
+    font-weight: lighter;
+    position: relative;
+    top: 7px;
+    opacity: 60%;
+}
+/* Pour les champs masquée */
+#champs-masque1 {
+    display: none;
+}
+#champs-masque2 {
+    display: none;
+}
+/* Bloc qui contient les champs */
+.bloc-champs {
+
+}
+/* Style pour les input du formulaire */
+.bloc-champs input {
+    width: 500px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+/* Lien dans le formulaire */
+.bloc-champs a {
+    background-color: #dde1eb;
+    padding: 6px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #6487e1;
+    position: relative;
+    left: 150px;
+    font-size: small;
+    
+}
+/* Image pour l`upload des images */
+.photo-silhouette {
+    width: 150px;
+    position: relative;
+}
+/* Icone plus pour ajouter  */
+#ajout {
+    border: 6px solid #ffffff;
+    border-radius: 50%;
+    color: #1950db;
+    font-size: 40px;
+    position: relative;
+    left: -55px;
+    padding: 0px;
+    top: -10px;
+}
+/* Bloc contenant tout le formulaire */
+#bloc-formulaire {
+    position: relative;
+    left: 30px;
+    display: none;
+}
+/* Bouton du bloc formulaire */
+#bloc-formulaire button {
+    position: relative;
+    left: 500px;
+    height: 40px;
+    width: 110px;
+    border: none;
+    border-radius: 20px;
+    font-size: small;
+    opacity: 80%;
+}
+/* Étoile a cote du bouton */
+#mark {
+    position: relative;
+    left: 500px;
+    opacity: 70%;
+}
+.img-contact {
+    filter: grayscale();
+    width: 40px;
+    position: relative;
+    bottom: 10px;
+    left: -5px;
+    margin-right: -28px;
+}
+
+/* Contatc */
+#contacts div{
+    display: flex;
+    gap: 30px;
+    font-size: small;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+
+/* Boutno suprimer et modifier pour chaque contact */
+#contacts button {
+    opacity: 99%;
+    border: none;
+    border-radius: 5px;
+    background-color: #a5b5df;
+    color: #ffffff;
+    width: 200px;
+    height: 30px;
+}
+#contacts button:hover {
+    opacity: 99%;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #7689b9;
+    width: 202px;
+    height: 32px;
+}
+#btn-newlibelle:hover {
+    background-color: #6487e1;
+    border-radius: 10px;
+    width: 120px;
+    color: #ffffff;
+}
+#contacts div:hover {
+    background-color: #7689b9;
+}
+#btn-sidebar {
+    height: 10px;
+    position: relative;
+    top: 12px;
+}
+
+#btn-sidebar2 {
+    height: 10px;
+    position: relative;
+    top: 23px;
+    padding-right: 10px;
+    display: none;
+}
+
+/* Média query */
+@media only screen and (max-width: 600px) {
+    .tete-sidebar {
+        display: none;
+    }
+    /* Deuxieme bouton du sidebar */
+    #btn-sidebar2 {
+        display: flex;
+    }
+    /* Barre de recherche */
+    #recherche {
+        width: 290px;
+    }
+    /* Block bar de recherche */
+    .bloc-recherche {
+        padding-left: 0%;
+    }
+    /* Le sidebar */
+    #sidebar {
+        display: none;
+    }
+    /* Bloc contenant toute l`affichage */
+    .block-main {
+        width: auto;
+        
+    }
+    .blockprincipale {
+        width: 320px;
+        margin-left: -35px;
+    }
+    /* Div pour les onglets renseignant sur le contact */
+    .onglets-infos {
+        font-size: 1px;
+        font-weight: 50;
+        gap: 1px;
+        
+    }
+    /* Trait a police fine */
+    .ligne-fin {
+        padding: 0%;
+        opacity: 5%;
+        font-weight: lighter;
+        width: inherit;
+    }
+    /* Trait a police fort */
+    .ligne-fort {
+        position: relative;
+        padding: 0%;
+        opacity: 80%;
+        width: 200px;
+        left: 60px;
+    }
+    /* ----------------------------------- */
+    /* Formulaire de contact */
+    #bloc-formulaire {
+        width: 320px;
+    }
+    .bloc-champs {
+        width: inherit;
+        margin-left: -60px;
+    }
+    .bloc-champs input {
+        width: 300px;
+    }
+    #lien-email {
+        margin-left: -80px;
+    }
+    #btn-soumission {
+        margin-left: -360px;
+    }
+    /* Contatc */
+    #contacts div{
+        display: flex;
+        gap: 1px;
+        font-size: 1px;
+        font-weight: lighter;
+        padding-top: auto;
+    }
+    .infos-secondaire {
+        display: none;
+    }
+    .img-contact {
+        filter: grayscale();
+        width: 40px;
+        position: relative;
+        bottom: 10px;
+        left: -5px;
+        margin-right: 5px;
+    }
+    #btn-newlibelle:hover {
+        background-color: #6487e1;
+        border-radius: 10px;
+        width: 120px;
+        color: #ffffff;
+    }
+    #contacts div:hover {
+        background-color: #7689b9;
+    }
+    #contacts button {
+        opacity: 99%;
+        width: 80px;
+        height: 30px;
+        margin: 2px;
+        border: none;
+        border-radius: 5px;
+        background-color: #7689b9;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="en-tete">
+        <div class="tete-sidebar" id="tete-sidebar">
+            <!-- Icone menu -->
+            <!-- Bouton pour masquer le sidebar -->
+            <button type="button" id="btn-sidebar"></button>
+            <!-- Image pour les contacts -->
+            <img src="asset/contacts.png" alt="" class="img-entete"/>
+            <h3 class="titre-entete">Contacts</h3>
+        </div>       
+        <div class="bloc-recherche">
+          <!-- Bouton pour afficher le sidebar -->
+          <button type="button" id="btn-sidebar2"></button>
+          <!-- Icone de recherche -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <!-- Champ de saisit -->
+          <input type="search" name="recherche" id="recherche" placeholder="Recherche">
+        </div>        
+      </div>
+    </header>
+    <div class="block-main">
+      <aside>
+        <div class="sidebar" id="sidebar">
+          <div class="corp-sidebar">
+            <!-- Bouton créer un contact -->
+            <div>
+              <button type="button" id="btnnew-contact" class="boutons">Créer un contact</button>
+            </div>
+            <!-- Bouton contact -->
+            <div>
+              <button type="button" id="btn-contact" class="boutons">Contact <span>10</span></button>
+            </div>
+            <div><i></i> Fréquents</div>
+            <div class="block-libelle">
+              <div class="entete-libelle" id="btn-newlibelle">
+              <h5 id="lien-lib">Libellé</h5> <i id="">+</i>
+              </div>
+              <ul class="liste-categorie" id="liste-libelle"> 
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <!-- Section pour l`affichage des contacts -->
+        <article>
+          <div id="bloc-contact">
+            <div class="blockprincipale">
+              <h3>Contact<span id="nombre-contact"> (10)</span></h3><hr class="ligne-fin">
+              <div class="onglets-infos">
+                <p>Titre</p>
+                <p>E-mail</p>
+                <p>Numero de téléphone</p>
+                <p>Fonction et entreprise</p>
+                <p>Libellé</p>
+              </div>
+              <hr class="ligne-fin">
+              <hr class="ligne-fort">
+              <div id="contacts">
+                
+              </div>
+            </div>               
+          </div>
+        </article>
+
+        <!-- Section pour le formulaire -->
+        <article>
+          <form action="" id="form-contact">
+            <div id="bloc-formulaire">
+              <div class="entete-form">
+                <i class="fa-solid fa-left-long"></i>
+                <i class="fa-regular fa-star" id="mark"></i>
+                <button type="submit" id="btn-soumission"> Enregistrer </button>
+              </div>
+              <div class="bloc-addphoto">
+                <img src="asset/photo_silhouette.png" alt="Ajouter une photo" class="photo-silhouette">
+                <i class="fa-solid fa-circle-plus" id="ajout"></i>
+              <div class="bloc-champs">
+                  <fieldset>
+                    <div><input type="text" name="" id="prenom" placeholder="Prenom"></div>
+                    <div><input type="text" name="" id="nom" placeholder="Nom"></div>
+                    <div id ="champs-masque1">
+                      <div><input type="text" id="suffixe" placeholder="Suffixe"></div>
+                      <div><input type="text" id="prenom-phonetique" placeholder="Prenom phonetique"></div>
+                      <div><input type="text" id="prenom-phonetique2" placeholder="2e prénom phonetique"></div>
+                      <div><input type="text" id="nom-phonetique" placeholder="Nom phonetique"></div>
+                      <div><input type="text" id="pseudo" placeholder="Pseudo"></div>
+                      <div><input type="text" id="type" placeholder="Classer en tant que"></div>
+                    </div>                
+                  </fieldset>
+                  <fieldset>
+                    <div><input type="text" id="entreprise" placeholder="Entreprise"></div>
+                    <div><input type="text" id="fonction" placeholder="Fonction"></div>
+                    <div><input type="text" id="service" placeholder="Service"></div>
+                  </fieldset>
+                  <fieldset>
+                    <div><input type="email" id="email" placeholder="E-mail"></div>
+                  </fieldset>
+                  <a href="" id="lien-email"><i class="fa-solid fa-plus"></i> Ajouter une adresse e-mail</a>
+                  <fieldset>
+                    <div>
+                      <input type="tel"  id="numero" placeholder="Téléphone">
+                    </div>
+                  </fieldset>
+              </div>
+            </div>
+          </form>
+        </article>
+      </main>
+    </div>
+  </body>
+  <script src="code.js"></script>
+</html>
