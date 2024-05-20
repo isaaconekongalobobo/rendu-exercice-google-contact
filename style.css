@@ -249,14 +249,21 @@ a {
     background-color: #7689b9;
 }
 #btn-sidebar {
-    height: 10px;
+    height: 20px;
     position: relative;
     top: 12px;
+}
+/* Icone menu burger */
+#icone-menu {
+    position: relative;
+    font-size: 15px;
+    top: 7px;
 }
 
 #btn-sidebar2 {
     height: 10px;
     position: relative;
+    font-size: 15px;
     top: 23px;
     padding-right: 10px;
     display: none;

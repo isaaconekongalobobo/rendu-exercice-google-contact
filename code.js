@@ -132,7 +132,7 @@ document.addEventListener ("click", function (event) {
             break;
 
         // Si la valeur de l`id correspond a celui du bouton pour masquer le sidebar
-        case "btn-sidebar":
+        case "icone-menu":
             // Je masque l`en tete du header
             document.getElementById ("tete-sidebar").style.display = "none";
             // Je mets en visuel le deuxieme bouton
