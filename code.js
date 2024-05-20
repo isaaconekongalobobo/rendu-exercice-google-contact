@@ -79,7 +79,7 @@ document.addEventListener ("submit", function (event) {
     })              
     // Je crée un bouton pour suprimer
     const btnSup = createElement ("button", {
-        id: "",
+        id: "btn-sup",
         textContent : "Suprimer",
         className : "btn-supprimer",
         title : idCo,
@@ -142,7 +142,7 @@ document.addEventListener ("click", function (event) {
             break;
     
         // Si la valeur de l`id correspond a celui du bouton pour masquer le sidebar
-        case "":
+        case "btn-sup":
             // Je recupere l`id de la div parente grace au title du bouton
             let idDivParent = event.target.title;
             // Je recupere la div parente
