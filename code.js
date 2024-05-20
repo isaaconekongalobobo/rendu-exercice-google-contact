@@ -45,7 +45,7 @@ document.addEventListener ("submit", function (event) {
     const contacts = document.getElementById ("contacts");
     // Je crée une div pour le contact
     const contact = createElement ("div", {
-        id : "",
+        id : idCo,
         className : "each-contact",
     });
     // Je crée une image pour chaque contact
@@ -82,14 +82,14 @@ document.addEventListener ("submit", function (event) {
         id: "",
         textContent : "Suprimer",
         className : "btn-supprimer",
-        onclick:"",
-
+        title : idCo,
     })
     // Je crée un bouton pour modifier le contact
     const btnMod = createElement ("button", {
         id: "",
         textContent : "Modifier",
         className : "btn-modifier",
+        title : idCo,
     })
     // J`ajoute tout les éléments créé dans la div du contact
     contact.append (img,titre,pEmail,pNumero,pFonction,pLibelle, btnMod, btnSup)
@@ -111,6 +111,7 @@ document.addEventListener ("submit", function (event) {
 // Je me a l`ecoute des evenements click
 document.addEventListener ("click", function (event) {
     // Je recupere la cible de l`evenement grace a l`objet event
+    let cibleClick = event.target;
     let idCible = event.target.id;
     // J`execute un code pour chaque valeur de idCible
     switch (idCible) {
@@ -138,6 +139,18 @@ document.addEventListener ("click", function (event) {
             document.getElementById ("btn-sidebar2").style.display = "block";
             // Ensuite, je masque le sidebar lui meme
             document.getElementById ("sidebar").style.display = "none";
+            break;
+    
+        // Si la valeur de l`id correspond a celui du bouton pour masquer le sidebar
+        case "":
+            // Je recupere l`id de la div parente grace au title du bouton
+            let idDivParent = event.target.title;
+            // Je recupere la div parente
+            let divParent = document.getElementById(idDivParent);
+            // Je demande a l`utilisateur la confirmation
+            confirm ("Voulez-vous vraiment supprimer ce contact");
+            divParent.remove ();
+            alert ("Contact supprimé");
             break;
 
         // Si la valeur de l`id correspond a celui du bouton pour afficher le sidebar
